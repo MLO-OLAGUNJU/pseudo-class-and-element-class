@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pseudo elements */
+
+p::first-line {
+    color: blue;
+    font-size: 2.5rem;
+}
+
+::before 
+::after
+::backdrop
+::placeholder
+::selection
+
+p::nth-of-type(2)::selection {
+    background: green;
+    color: red;
+}
+
+/* Pseudo classes */
+/* :active
+:hover
+:focus-visible
+:focus-within
+:focus
+:filter */
+
+.btn:hover {
+    outline: 2px dashed red;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p:first-child {
+    background: blue;
+    font-weight: 700;
+}
+
+p:last-child {
+    background: red;
+    font-weight: 500;
+    position: relative;
+}
+
+.div_class {
+    position: relative;
+    width: 20rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+
+}
+
+.img-class {
+    position: relative;
+    z-index: 11;
+    margin-left: 100px;
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 700px;
+    height: 100px;
+    padding: 100px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
